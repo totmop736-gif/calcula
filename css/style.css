@@ -87,12 +87,12 @@ input::-webkit-inner-spin-button {
   gap: 1vw;
 }
 .plus {
-  background-image: url(/icons/math-plus-svgrepo-com.svg);
+  background-image: url(../icons/math-plus-svgrepo-com.svg);
   background-position: center;
   background-repeat: no-repeat;
 }
 .minus {
-  background-image: url(/icons/math-minus-svgrepo-com.svg);
+  background-image: url(../icons/math-minus-svgrepo-com.svg);
   background-position: center;
   background-repeat: no-repeat;
 }
