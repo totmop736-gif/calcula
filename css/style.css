@@ -11,8 +11,8 @@ input::-webkit-inner-spin-button {
 }
 
 .wrapper {
-  display: block;
-  padding: 10vh;
+  display: flex;
+  padding: 3vh;
 }
 
 @keyframes main__blink {
@@ -24,17 +24,25 @@ input::-webkit-inner-spin-button {
 .main__conteiner {
   margin: auto;
   min-width: 50vw;
-  max-width: 50vw;
-  min-height: 10vh;
-  padding: 5vh 3vw;
+  min-height: 600px;
+  padding: 5vh 0vw;
   border: 0.05rem solid #34ffff;
   border-radius: 3vw;
   box-shadow: 0.2vh 0.2vh 3vh 0px #2acece;
-  display: grid;
-  gap: 3vh;
+  display: flex;
+  flex-direction: column;
+  gap: 3%;
   animation: main__blink 4s infinite;
   transition: 2s;
 }
+
+.conteiner_under_history {
+  min-height: 500px;
+  display: grid;
+  grid-template: 1fr 1fr 1fr / 1fr;
+  gap: 3%;
+}
+
 
 @media (max-width: 600px) {
   .main__conteiner {
@@ -42,12 +50,15 @@ input::-webkit-inner-spin-button {
   }
 }
 .result__sum {
+  margin: 0 auto;
+  width: 90% ;
+  height: 100%;
   border: 0.05rem solid #34ffaa;
   border-radius: 2vh;;
-  min-height: 15vh;
-  background-size: 15vh;
+  min-height: 15%;
+  background-size: 15%;
   text-align: center;
-  font-size: 6vh;
+  font-size: 4rem;
   line-height: 250%;
   transition: .5s;
 }
@@ -57,17 +68,20 @@ input::-webkit-inner-spin-button {
 }
 
 .main__head {
+  margin: 0 auto;
+  width: 90% ;
   display: grid;
-  grid-template: auto / 4fr 1fr;
-  gap: 1vw;
+  grid-template: 1fr / 2fr 1fr;
+  gap: 5%;
 }
 .button {
+  width: 100%;
   line-height:30px;
-  font-size:2vw ;
+  font-size: 100%;
   border: 0.05rem solid #34ffff;
   border-radius: 2vh;;
-  min-height: 15vh;
-  background-size: 15vh;
+  min-height: 100%;
+  background-size: 25%;
   text-align: center;
   transition: 0.3s;
   font-weight: 700;
@@ -82,9 +96,12 @@ input::-webkit-inner-spin-button {
   background-repeat: no-repeat;
 }
 .main__body {
+  margin: 0 auto;
+  width: 90% ;
+  height: 100%;
   display: grid;
   grid-template: auto / 1fr 1fr;
-  gap: 1vw;
+  gap: 5%;
 }
 .plus {
   background-image: url(../icons/math-plus-svgrepo-com.svg);
@@ -97,6 +114,9 @@ input::-webkit-inner-spin-button {
   background-repeat: no-repeat;
 }
 .main__footer {
+  margin: 0 auto;
+  width: 90% ;
+  min-height: 100%;
 }
 
 .history {
@@ -123,7 +143,7 @@ input::-webkit-inner-spin-button {
   gap: 1vw;
 }
 .number__conteiner {
-  font-size: 3vh;
+  font-size: 50%;
   text-align: center;
   border-radius: 2vh;;
   border: 0.05rem solid #34ffff;
@@ -139,7 +159,7 @@ input::-webkit-inner-spin-button {
 
 
 .history__result {
-  font-size: 3vh;
+  font-size: 50%;
   text-align: center;
   border-radius: 2vh;;
   border: 0.05rem solid #34ffff;
